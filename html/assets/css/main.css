@@ -443,7 +443,7 @@ body {
 .header {
   min-height: 282px;
   width: 100%;
-  background: url("/assets/images/header-bg.jpg") no-repeat center top transparent;
+  background: url("../images/header-bg.jpg") no-repeat center top transparent;
 }
 
 .header .container {
@@ -512,7 +512,7 @@ body {
   display: block;
   width: 930px;
   height: 100%;
-  background: url("/assets/images/header-bg-top.png") no-repeat 0 0 transparent;
+  background: url("../images/header-bg-top.png") no-repeat 0 0 transparent;
   content: "";
 }
 
@@ -652,7 +652,7 @@ body {
   right: 0;
   width: 1200px;
   height: 54px;
-  background: url("/assets/images/header-bg-bottom.png") no-repeat 100% 0 transparent;
+  background: url("../images/header-bg-bottom.png") no-repeat 100% 0 transparent;
   content: "";
 }
 
@@ -793,7 +793,7 @@ body {
   margin-left: 10px;
   width: 150px;
   height: 120px;
-  background: url("/assets/images/sidebar-bg.jpg") no-repeat 0 0 transparent;
+  background: url("../images/sidebar-bg.jpg") no-repeat 0 0 transparent;
 }
 
 .page-container__sidebar-link {
@@ -1062,7 +1062,7 @@ body {
   max-height: 365px;
   width: 100%;
   height: 100%;
-  background: url("/assets/images/footer-bg.jpg") repeat-x 0 0 transparent;
+  background: url("../images/footer-bg.jpg") repeat-x 0 0 transparent;
 }
 
 .app-footer__top-inner {

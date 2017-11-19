@@ -103,7 +103,7 @@
 }
 
 .header {
-    background: url("/assets/images/header-bg.jpg") no-repeat center top transparent;
+    background: url("../images/header-bg.jpg") no-repeat center top transparent;
     width: 100%;
     min-height: 282px;
 
@@ -165,7 +165,7 @@
 
     &:after {
         content: "";
-        background: url("/assets/images/header-bg-top.png") no-repeat 0 0 transparent;
+        background: url("../images/header-bg-top.png") no-repeat 0 0 transparent;
         height: 100%;
         width: 930px;
         display: block;
@@ -309,7 +309,7 @@
 
     &:after {
         content: "";
-        background: url("/assets/images/header-bg-bottom.png") no-repeat 100% 0 transparent;
+        background: url("../images/header-bg-bottom.png") no-repeat 100% 0 transparent;
         width: 1200px;
         height: 54px;
         position: absolute;
