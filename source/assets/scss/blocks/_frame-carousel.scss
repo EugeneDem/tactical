@@ -1,0 +1,120 @@
+.frame-carousel {
+
+    &__state {
+        &.slick-slider.slick-dotted {
+            margin-bottom: 0;
+        }
+
+        .slick-arrow {
+            z-index: 1;
+        }
+
+        .slick-prev,
+        .slick-next {
+            width: 30px;
+            height: 52px;
+
+            &:before {
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                width: 30px;
+                height: 52px;
+                content: "";
+                display: inline-block;
+            }
+        }
+        
+        .slick-prev {
+            left: 17px;
+
+            &:before {
+                background-image: url("arrow-left.png#datauri");
+            }
+        }
+
+        .slick-next {
+            right: 17px;
+
+            &:before {
+                background-image: url("arrow-right.png#datauri");
+            }
+        }
+    }
+
+    .slick-dots {
+        bottom: 7px;
+        
+        li {
+            width: 14px;
+            height: 14px;
+            margin-left: 3px;
+            margin-right: 3px;
+
+            button {
+                width: 14px;
+                height: 14px;
+                box-sizing: border-box;
+
+                &:before {
+                    border-radius: 50%;
+                    border: 2px solid #8c8e90;
+                    width: 14px;
+                    height: 14px;
+                    content: "";
+                    opacity: 1;
+                    box-sizing: border-box;
+                }
+            }
+
+            &.slick-active {
+                button:before {
+                    background-color: #babcbe;
+                }
+            }
+        }
+    }
+
+    &__media {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+    }
+
+    &__content {
+        width: 376px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        position: absolute;
+        right: 15px;
+        bottom: 12px;
+        z-index: 1;
+    }
+
+    &__content-link {
+        color: #fff;
+        text-transform: none;
+        text-decoration: underline;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.sidebar-news {
+    position: relative;
+    padding-bottom: 102px;
+    padding-left: 12px;
+
+    &__title {
+        color: #231f20;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: $font-magistral-medium;
+        text-transform: uppercase;
+        margin-bottom: 11px;
+        position: relative;
+
+        &:after {
+            content: "";
+            background: url("title-bg.png#datauri") repeat-x 0 0 transparent;
+            height: 15px;
+            width: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -8px;
+        }
+    }
+
+    &__title-decor {
+        background-color: #eae6e4;
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 22px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__all {
+        font-size: 15px;
+        line-height: 17px;
+        color: #231f20;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: underline;
+        position: absolute;
+        left: 12px;
+        bottom: 32px;
+
+        &:hover,
+        &:focus {
+            color: #231f20;
+        }
+    }
+}
+
+.sidebar-news-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        margin-top: 17px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        color: #231f20;
+        font-size: 15px;
+        line-height: 17px;
+
+        &:hover,
+        &:focus {
+            color: #231f20;
+            text-decoration: none;
+        }
+    }
+}

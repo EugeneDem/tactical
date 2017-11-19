@@ -1,0 +1,65 @@
+header
+	.header-top
+		.container
+			.row
+				.navbar-top
+					each value in HEADER.navbarTopList
+						.navbar-top__item
+							a.navbar-top__link(href=value.url)!= value.title
+				.navbar-common
+					.navbar-common__item
+						a.navbar-common__link.navbar-common__link_login(href="#")
+							span.navbar-common__link-icon
+							|  Вход для дилеров
+					.navbar-common__item
+						a.navbar-common__link.navbar-common__link_email(href="mailto:example@gmail.com")
+							span.navbar-common__link-icon
+							|  Отправить письмо
+	.header
+		.container
+			.row
+				.header__wrap
+					.header__wrap-item-left
+						.brand
+							a.brand__img(href="#")
+								img(src="assets/images/brand.png" alt="Неоком")
+							.brand__title Профессиональные радиостанции
+					.header__wrap-item-right
+						.header-phone
+							a.header-phone__link(href="callto:+74997030730") +7
+								span  (499) 703-0730
+						.header-links
+							.header-links__title Тактические гарнитуры
+							.header-links__list
+								.header-links__list-item
+									a.header-links__list-link(href="#") 3М PELTOR
+								.header-links__list-item
+									a.header-links__list-link(href="#") DAVID CLARK
+								.header-links__list-item
+									a.header-links__list-link(href="#") Motorola
+								.header-links__list-item
+									a.header-links__list-link(href="#") Vertex
+						.header-search
+							form(action="")
+								.header-search__row
+									input.header-search__input(placeholder="Поиск" type="text" name="search")
+									input.header-search__btn(type="submit" value="")
+						.header-support
+							a.header-support__link(href="#") Техническая поддержка
+			.header__bottom
+				nav.navbar
+					.navbar__item.is-active
+						a.navbar__link(href="#") Продукция
+						.sub-navbar
+							.sub-navbar__list
+								a.sub-navbar__link(href="#") Диспетчерские системы связи
+								a.sub-navbar__link(href="#") Радиостанции
+								a.sub-navbar__link(href="#") Гарнитуры
+								a.sub-navbar__link(href="#") Специальное оборудование
+								a.sub-navbar__link(href="#") Инормационнаые материалы
+					.navbar__item
+						a.navbar__link(href="#") Решения
+					.navbar__item
+						a.navbar__link(href="#") Услуги
+					.navbar__item
+						a.navbar__link(href="#") Технологии

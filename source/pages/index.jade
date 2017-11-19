@@ -1,0 +1,58 @@
+block page
+	-var page = "login";
+
+extends ../blocks/layout/layout
+
+block content
+	.page-content
+		.page-container.page-container_sidebar-right
+			.page-container__sidebar
+				.page-container__sidebar-list
+					each value, index in INDEX.sidebar
+						.page-container__sidebar-list-item(class=(index === 0) ? "is-active" : "")
+							a.page-container__sidebar-link(href=value.link)!= value.title
+			.page-container__content
+				.frame-carousel
+					.frame-carousel__state.js-frame-carousel
+						.frame-carousel__item
+							.frame-carousel__media
+								img(src="content/images/frame/frame-img-01.png")
+							.frame-carousel__content
+								p Аппаратно-программный комплекс автоматического управления военизированными формированиями в&nbsp;режиме реального времени
+								a.frame-carousel__content-link(href="#") Узнать больше&nbsp;&gt;
+						.frame-carousel__item
+							.frame-carousel__media
+								img(src="content/images/frame/frame-img-02.png")
+							.frame-carousel__content
+								p Аппаратно-программный комплекс автоматического управления военизированными формированиями в&nbsp;режиме реального времени
+								a.frame-carousel__content-link(href="#") Узнать больше&nbsp;&gt;
+						.frame-carousel__item
+							.frame-carousel__media
+								img(src="content/images/frame/frame-img-03.png")
+							.frame-carousel__content
+								p Аппаратно-программный комплекс автоматического управления военизированными формированиями в&nbsp;режиме реального времени
+								a.frame-carousel__content-link(href="#") Узнать больше&nbsp;&gt;
+						.frame-carousel__item
+							.frame-carousel__media
+								img(src="content/images/frame/frame-img-04.png")
+							.frame-carousel__content
+								p Аппаратно-программный комплекс автоматического управления военизированными формированиями в&nbsp;режиме реального времени
+								a.frame-carousel__content-link(href="#") Узнать больше&nbsp;&gt;
+		.page-container.page-container_break
+		.page-container.page-container_sidebar-right-bordered
+			.page-container__sidebar
+				.sidebar-news
+					.sidebar-news__title
+						.sidebar-news__title-decor Новости
+					ul.sidebar-news-list
+						each news in INDEX.newslist
+							li.sidebar-news-list__item
+								a.sidebar-news-list__link(href=news.link)
+									.sidebar-news-list__text!= news.title
+									.sidebar-news-list__date!= news.date
+					a.sidebar-news__all(href="#") Все новости
+			.page-container__content
+				h2.h2 Группа компаний &laquo;НЕОКОМ&raquo;
+				p специализируется на&nbsp;проектировании и&nbsp;монтаже цифровых систем радиосвязи, поставках цифровых радиостанций, а&nbsp;также построении диспетчерских систем на&nbsp;базе технологий TRBOnet. Компания известна многочисленными внедрениями систем цифровой радиосвязи: от&nbsp;простых конвенциональных до&nbsp;многосайтовых транкинговых систем. Ежегодно мы&nbsp;подтверждаем свои лидирующие позиции, получая соответствующие сертификаты и&nbsp;награды.
+				p Мы&nbsp;являемся разработчиками программного обеспечения для диспетчерских систем цифровой радиосвязи. Разработанный нашей компанией продукт&nbsp;&mdash; TRBOnet&nbsp;&mdash; позволяет создавать диспетчерские центры любых размеров. TRBOnet&nbsp;&mdash; не&nbsp;просто многоуровневое диспетчерское программное решение, это аппаратно-программный комплекс, позволяющий с&nbsp;легкостью решить задачу построения радиосети любого уровня сложности. Чутко реагируя на&nbsp;потребности рынка и&nbsp;обновления производителя, компания за&nbsp;короткий период набрала обороты и&nbsp;вышла на&nbsp;мировой рынок диспетчерских приложений. В&nbsp;течение 7&nbsp;лет TRBOnet распространился по&nbsp;всему миру: продажи ведутся в&nbsp;77&nbsp;странах мира, у&nbsp;нас более 214&nbsp;партнеров, а&nbsp;количество внедрений перевалило за&nbsp;2300&nbsp;проектов. 
+				p Помимо программного обеспечения мы&nbsp;разрабатываем аппаратные решения: IP- шлюзы для цифровых радиостанций и&nbsp;ГЛОНАСС/GPS трекеры для работы как в&nbsp;цифровых системах радиосвязи, так и&nbsp;в&nbsp;GSM сетях, индивидуальные переносные системы цифровой/аналоговый радиосвязи для оперативного и&nbsp;оперативно-тактического применения.

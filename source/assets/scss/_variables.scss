@@ -1,0 +1,24 @@
+// media queries
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+//== Typography
+$font-path: "../fonts/" !default;
+$font-helios: "Heliosc" !default;
+$font-helios-bold: "Heliosc-Bold" !default;
+$font-helios-light: "Heliosc-Light" !default;
+$font-magistral: "Magistral" !default;
+$font-magistral-medium: "Magistral-Medium" !default;
+$font-magistral-bold: "Magistral-Bold" !default;
+
+$font-family-default: Arial, Helvetica, sans-serif !default;
+
+//Colors
+//== Sprites svg
+$mq-base-font-size: 14px !default;

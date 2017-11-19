@@ -1,0 +1,53 @@
+@font-face {
+    font-family: $font-helios;
+    src: url($font-path + $font-helios + '.woff') format('woff'),
+         url($font-path + $font-helios + '.ttf') format('truetype'),
+         url($font-path + $font-helios + '.svg#Heliosc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-helios-bold;
+    src: url($font-path + $font-helios-bold + '.woff') format('woff'),
+         url($font-path + $font-helios-bold + '.ttf') format('truetype'),
+         url($font-path + $font-helios-bold + '.svg#Heliosc-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-helios-light;
+    src: url($font-path + $font-helios-light + '.woff') format('woff'),
+         url($font-path + $font-helios-light + '.ttf') format('truetype'),
+         url($font-path + $font-helios-light + '.svg#Heliosc-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-magistral;
+    src: url($font-path + $font-magistral + '.woff') format('woff'),
+         url($font-path + $font-magistral + '.ttf') format('truetype'),
+         url($font-path + $font-magistral + '.svg#Magistral') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-magistral-medium;
+    src: url($font-path + $font-magistral-medium + '.woff') format('woff'),
+         url($font-path + $font-magistral-medium + '.ttf') format('truetype'),
+         url($font-path + $font-magistral-medium + '.svg#Magistral-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-magistral-bold;
+    src: url($font-path + $font-magistral-bold + '.woff') format('woff'),
+         url($font-path + $font-magistral-bold + '.ttf') format('truetype'),
+         url($font-path + $font-magistral-bold + '.svg#Magistral-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
