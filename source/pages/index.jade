@@ -77,9 +77,9 @@ block content
 												img(src=value.img alt="")
 										.main-product-item__content
 											.main-product-item__title!= value.title
-											if value.decr
+											if value.descr
 												ul.main-product-item__list
-													each property in value.decr
+													each property in value.descr
 														li!= property.text
 										.main-product-item__footer
 											a.main-product-item__link(href="#") Подробнее
