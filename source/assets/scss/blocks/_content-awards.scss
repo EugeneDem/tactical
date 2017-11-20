@@ -1,0 +1,39 @@
+.content-awards {
+    position: relative;
+    padding-bottom: 20px;
+
+    &__wrap {
+        font-size: 16px;
+        line-height: 18px;
+        padding-right: 20px;
+        padding-left: 28px;
+
+        p + p {
+            margin-top: 21px;
+        }
+    }
+
+    &__img-left {
+        float: left;
+        margin-right: 20px;
+
+        &.content-awards__first-break {
+            margin-top: -40px;
+        }
+    }
+}
+
+.content-awards-more {
+    color: #231f20;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: underline;
+    position: absolute;
+    right: 20px;
+    bottom: 31px;
+
+    &:hover,
+    &:focus {
+        color: #231f20;
+    }
+}

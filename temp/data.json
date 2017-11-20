@@ -62,6 +62,92 @@
 				"date": "18-21 октября 2016 года",
 				"link": "#"
 			}
+		],
+		"productList": [
+			{
+				"img": "content/images/product/img-prod.jpg",
+				"title": "Модель H9930",
+				"descr": [
+					{
+						"text": "Производитель"
+					},
+					{
+						"text": "David Clark"
+					},
+					{
+						"text": "Габариты"
+					},
+					{
+						"text": "Вес"
+					},
+					{
+						"text": "Температура эксплуатации"
+					}
+				]
+			},
+			{
+				"img": "content/images/product/img-prod.jpg",
+				"title": "Модель H9930",
+				"descr": [
+					{
+						"text": "Производитель"
+					},
+					{
+						"text": "David Clark"
+					},
+					{
+						"text": "Габариты"
+					},
+					{
+						"text": "Вес"
+					},
+					{
+						"text": "Температура эксплуатации"
+					}
+				]
+			},
+			{
+				"img": "content/images/product/img-prod.jpg",
+				"title": "Модель H9930",
+				"descr": [
+					{
+						"text": "Производитель"
+					},
+					{
+						"text": "David Clark"
+					},
+					{
+						"text": "Габариты"
+					},
+					{
+						"text": "Вес"
+					},
+					{
+						"text": "Температура эксплуатации"
+					}
+				]
+			},
+			{
+				"img": "content/images/product/img-prod.jpg",
+				"title": "Модель H9930",
+				"descr": [
+					{
+						"text": "Производитель"
+					},
+					{
+						"text": "David Clark"
+					},
+					{
+						"text": "Габариты"
+					},
+					{
+						"text": "Вес"
+					},
+					{
+						"text": "Температура эксплуатации"
+					}
+				]
+			}
 		]
 	},
 	"HEADER": {

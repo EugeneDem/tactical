@@ -1,0 +1,55 @@
+.cover-lg {
+    background: none no-repeat center top;
+    width: 1280px;
+    height: 476px;
+    margin: 98px auto 78px;
+
+    &__wrap {
+        width: 100%;
+        height: 476px;
+        display: table;
+        table-layout: fixed;
+    }
+
+    &__content {
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        padding-bottom: 40px;
+        text-align: right;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 33px;
+        line-height: 35px;
+        font-family: $font-magistral-bold;
+        font-style: italic;
+        padding-right: 80px;
+
+        span {
+            display: block;
+
+            &:first-child {
+                margin-right: 80px;
+            }
+        }
+    }
+
+    &__link {
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+        position: absolute;
+        right: 23px;
+        bottom: 21px;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+}

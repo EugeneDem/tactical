@@ -1,0 +1,37 @@
+.preview-news {
+    position: relative;
+    padding-bottom: 20px;
+
+    &__title {
+        font-size: 21px;
+        line-height: 23px;
+        font-weight: bold;
+        margin-top: -3px;
+        margin-bottom: 2px;
+    }
+
+    &__content {
+        font-size: 16px;
+        line-height: 18px;
+        padding-right: 20px;
+
+        p + p {
+            margin-top: 21px;
+        }
+    }
+}
+
+.preview-news-more {
+    color: #231f20;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: underline;
+    position: absolute;
+    right: 20px;
+    bottom: 31px;
+
+    &:hover,
+    &:focus {
+        color: #231f20;
+    }
+}

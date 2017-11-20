@@ -1,0 +1,30 @@
+.cover-sm {
+    background: none no-repeat center top transparent;
+    width: 100%;
+    min-height: 72px;
+    display: table;
+    table-layout: fixed;
+
+    &__content {
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__link {
+        font-size: 21px;
+        line-height: 23px;
+        color: #231f20;
+        font-family: $font-magistral-bold;
+        font-style: italic;
+
+        &:hover,
+        &:focus {
+            color: #231f20;
+            text-decoration: none;
+        }
+    }
+}

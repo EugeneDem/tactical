@@ -41,6 +41,11 @@
         vertical-align: bottom;
         padding-left: 10px;
         padding-right: 10px;
+
+        &:hover,
+        &:focus {
+            color: #231f20;
+        }
     }
 }
 
@@ -66,6 +71,11 @@
         font-family: $font-helios-light;
         text-transform: uppercase;
         position: relative;
+
+        &:hover,
+        &:focus {
+            color: #231f20;
+        }
 
         &_login {
             padding-left: 32px;
@@ -184,6 +194,7 @@
         &:hover,
         &:focus {
             color: #fff;
+            text-decoration: none;
         }
 
         span {

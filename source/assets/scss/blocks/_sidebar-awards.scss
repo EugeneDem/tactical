@@ -1,0 +1,57 @@
+.sidebar-awards {
+    padding-bottom: 8px;
+    padding-left: 12px;
+}
+
+.sidebar-awards-all {
+    font-size: 15px;
+    line-height: 17px;
+    color: #231f20;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    position: absolute;
+    left: 12px;
+    bottom: 32px;
+
+    &:hover,
+    &:focus {
+        color: #231f20;
+    }
+}
+
+.sidebar-awards-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__group {
+        @include clearfix();
+    }
+
+    &__group + &__group {
+        margin-top: 8px;
+    }
+
+    &__item {
+        width: 100%;
+        float: left;
+        display: block;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    &__group_two &__item {
+        width: 50%;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}

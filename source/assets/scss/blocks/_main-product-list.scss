@@ -1,0 +1,15 @@
+.main-product-list {
+    &__list {
+        @include clearfix();
+        margin-left: -23px;
+        margin-right: -23px;
+    }
+
+    &__list-item {
+        width: percentage(1 /4);
+        padding-left: 23px;
+        padding-right: 23px;
+        float: left;
+        box-sizing: border-box;
+    }
+}

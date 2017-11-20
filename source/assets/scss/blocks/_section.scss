@@ -1,0 +1,47 @@
+.section {
+    &__title {
+        padding-left: 102px;
+        position: relative;
+        
+        &:before {
+            content: "";
+            background: url("title-bg.png#datauri") repeat 0 0 transparent;
+            width: 102px;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -8px;
+            z-index: 1;
+        }
+
+        &:after {
+            content: "";
+            border-top: 1px solid #b8b4b3;
+            height: 0;
+            position: absolute;
+            left: 102px;
+            right: 0;
+            bottom: 4px;
+        }
+    }
+
+    &__title-decor {
+        background-color: #eae6e4;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: $font-magistral-medium;
+        color: #231f20;
+        display: inline-block;
+        vertical-align: top;
+        text-transform: uppercase;
+        padding-left: 10px;
+        padding-right: 4px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__wrap {
+        padding-top: 29px;
+    }
+}
