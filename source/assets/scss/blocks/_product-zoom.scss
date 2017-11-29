@@ -1,0 +1,82 @@
+.product-zoom {
+    width: 300px;
+    height: 450px;
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 20px;
+
+    &__state {
+        &.slick-dotted.slick-slider {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__item:focus {
+        outline: 0 none;
+    }
+
+    .slick-slide {
+        img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:focus {
+                outline: 0 none;
+            }
+        }
+    }
+
+    .slick-dots {
+        bottom: -40px;
+
+        li {
+
+            height: 36px;
+            width: 42px;
+            margin-left: 4px;
+            margin-right: 4px;
+
+            button {
+                border-radius: 3px;
+                background-color: #fff;
+                height: 36px;
+                width: 42px;
+                line-height: 0;
+                font-size: 0;
+                color: transparent;
+                padding: 2px;
+                margin: 0;
+                overflow: hidden;
+                box-sizing: border-box;
+
+                &:before {
+                    border-radius: 3px;
+                    border: 1px solid #868282;
+                    width: 42px;
+                    height: 36px;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    box-sizing: border-box;
+                }
+            }
+
+            .img-thumbnail {
+                border: medium none;
+                border-radius: 0;
+                max-height: 100%;
+            }
+
+            &.slick-active {
+                button:before {
+                    border-color: #d08125;
+                    background: none;
+                }
+            }
+        }
+    }
+}

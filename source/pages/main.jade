@@ -1,0 +1,136 @@
+block page
+	-var page = "main";
+
+extends ../blocks/layout/layout
+
+block content
+	.page-content
+		.page-container.page-container_sidebar-right
+			.page-container__sidebar
+				.page-container__sidebar-list
+					each value, index in MAIN.sidebar
+						.page-container__sidebar-list-item(class=(index === 0) ? "is-active" : "")
+							a.page-container__sidebar-link(href=value.link)!= value.title
+			.page-container__content
+				.frame-carousel
+					.frame-carousel__state.js-frame-carousel
+						.frame-carousel__item
+							.frame-carousel__media
+								img(src="content/images/frame/frame-img-01.png")
+							.frame-carousel__content
+								p Аппаратно-программный комплекс автоматического управления военизированными формированиями в&nbsp;режиме реального времени
+								a.frame-carousel__content-link(href="#") Узнать больше&nbsp;&gt;
+						.frame-carousel__item
+							.frame-carousel__media
+								img(src="content/images/frame/frame-img-02.png")
+							.frame-carousel__content
+								p Аппаратно-программный комплекс автоматического управления военизированными формированиями в&nbsp;режиме реального времени
+								a.frame-carousel__content-link(href="#") Узнать больше&nbsp;&gt;
+						.frame-carousel__item
+							.frame-carousel__media
+								img(src="content/images/frame/frame-img-03.png")
+							.frame-carousel__content
+								p Аппаратно-программный комплекс автоматического управления военизированными формированиями в&nbsp;режиме реального времени
+								a.frame-carousel__content-link(href="#") Узнать больше&nbsp;&gt;
+						.frame-carousel__item
+							.frame-carousel__media
+								img(src="content/images/frame/frame-img-04.png")
+							.frame-carousel__content
+								p Аппаратно-программный комплекс автоматического управления военизированными формированиями в&nbsp;режиме реального времени
+								a.frame-carousel__content-link(href="#") Узнать больше&nbsp;&gt;
+			.page-container__hr
+		.page-container.page-container_break
+		.page-container.page-container_news
+			.page-container__content
+				.preview-news
+					h2.preview-news__title Группа компаний &laquo;НЕОКОМ&raquo;
+					.preview-news__content
+						p специализируется на&nbsp;проектировании и&nbsp;монтаже цифровых систем радиосвязи, поставках цифровых радиостанций, а&nbsp;также построении диспетчерских систем на&nbsp;базе технологий TRBOnet. Компания известна многочисленными внедрениями систем цифровой радиосвязи: от&nbsp;простых конвенциональных до&nbsp;многосайтовых транкинговых систем. Ежегодно мы&nbsp;подтверждаем свои лидирующие позиции, получая соответствующие сертификаты и&nbsp;награды.
+						p Мы&nbsp;являемся разработчиками программного обеспечения для диспетчерских систем цифровой радиосвязи. Разработанный нашей компанией продукт&nbsp;&mdash; TRBOnet&nbsp;&mdash; позволяет создавать диспетчерские центры любых размеров. TRBOnet&nbsp;&mdash; не&nbsp;просто многоуровневое диспетчерское программное решение, это аппаратно-программный комплекс, позволяющий с&nbsp;легкостью решить задачу построения радиосети любого уровня сложности. Чутко реагируя на&nbsp;потребности рынка и&nbsp;обновления производителя, компания за&nbsp;короткий период набрала обороты и&nbsp;вышла на&nbsp;мировой рынок диспетчерских приложений. В&nbsp;течение 7&nbsp;лет TRBOnet распространился по&nbsp;всему миру: продажи ведутся в&nbsp;77&nbsp;странах мира, у&nbsp;нас более 214&nbsp;партнеров, а&nbsp;количество внедрений перевалило за&nbsp;2300&nbsp;проектов. 
+						p Помимо программного обеспечения мы&nbsp;разрабатываем аппаратные решения: IP- шлюзы для цифровых радиостанций и&nbsp;ГЛОНАСС/GPS трекеры для работы как в&nbsp;цифровых системах радиосвязи, так и&nbsp;в&nbsp;GSM сетях, индивидуальные переносные системы цифровой/аналоговый радиосвязи для оперативного и&nbsp;оперативно-тактического применения.
+				a.preview-news-more(href="#") Читать дальше >>>
+			.page-container__hr
+			.page-container__sidebar
+				.sidebar-news
+					.sidebar-news__title
+						.sidebar-news__title-decor Новости
+					ul.sidebar-news-list
+						each news in MAIN.newslist
+							li.sidebar-news-list__item
+								a.sidebar-news-list__link(href=news.link)
+									.sidebar-news-list__text!= news.title
+									.sidebar-news-list__date!= news.date
+				a.sidebar-news-all(href="#") Все новости
+		.page-container.page-container_break
+		.section
+			.section__title
+				.section__title-decor Витрина
+			.section__wrap
+				.main-product-list
+					.main-product-list__state
+						.main-product-list__list
+							each value in MAIN.productList
+								.main-product-list__list-item
+									.main-product-item
+										.main-product-item__header
+											.main-product-item__media
+												img(src=value.img alt="")
+										.main-product-item__content
+											.main-product-item__title!= value.title
+											if value.descr
+												ul.main-product-item__list
+													each property in value.descr
+														li!= property.text
+										.main-product-item__footer
+											a.main-product-item__link(href="#") Подробнее
+		.page-container.page-container_break
+	.cover-sm(style="background-image: url('content/images/cover-small/cover-sm-bg.jpg');")
+		.cover-sm__content 
+			a.cover-sm__link(href="#") Профессиональные радиостанции
+			br
+			a.cover-sm__link(href="#") Тактические гарнитуры
+	.cover-lg(style="background-image: url('content/images/cover-big/cover-lg-bg.jpg');")
+		.container
+			.cover-lg__wrap
+				.cover-lg__content
+					.cover-lg__title 
+						span Тактические
+						span гарнитуры
+					a.cover-lg__link(href="#") Полный каталог >>>
+	.page-content
+		.page-container.page-container_awards
+			.page-container__content
+				.content-awards
+					.content-awards__wrap
+						.content-awards__img-left.content-awards__first-break
+							img(src="content/images/awards/img-1.jpg" alt="")
+						p <b>Группа компаний &laquo;НЕОКОМ&raquo;</b> является официальным дистрибьютором компании <b>3М&nbsp;Peltor</b>, известное своими решениями в&nbsp;области защиты слуха, а&nbsp;также компании <b>David Clark</b> известной своими решениями в&nbsp;области построения промышленных и&nbsp;морских интерком систем, а&nbsp;также поставки гарнитур для объектов авиации,тяжелого и&nbsp;легкого машиностроения, там где требуется защита слуха.
+						.clearfix
+							br
+							br
+						p 
+							b В&nbsp;настоящий момент лидирующие позиции нашей компании подтверждены сертификатами аккредитованного партнера ЗОЛОТОГО уровня и&nbsp;сертификатом системного партнера
+						p 2013 год стал для компании, да&nbsp;и&nbsp;для всего рынка радиосвязи, знаковым: впервые в&nbsp;истории одна компания сумела удержать звание &laquo;Лучший парнер Мotorola Solutions&raquo; в&nbsp;России.
+						p К&nbsp;2012 году приложения TRBOnet завоевывают популярность во&nbsp;всем мире: программными продуктами TRBOnet пользуются более чем в&nbsp;100 странах мира, а&nbsp;количество успешно проведенных проектов превысило 1000.
+						p По&nbsp;итогам 2012 года Неоком завоевывает 1&nbsp;место среди партнеров Моторолы в&nbsp;России, а&nbsp;наша работа с&nbsp;партнерами TRBOnet в&nbsp;Европе и&nbsp;Африке удостаивается звания &laquo;Лучший радио партнер по&nbsp;приложениям в&nbsp;регионе ЕМЕА.
+						p В&nbsp;2010 году компания Motorola Solutions отметила продукт TRBOnet как &laquo;Лучшее решение для диспетчерских систем&raquo;.
+				a.content-awards-more(href="#") Узнать больше&nbsp;>>>
+			.page-container__hr
+			.page-container__sidebar
+				.sidebar-awards
+					ul.sidebar-awards-list
+						li.sidebar-awards-list__group.sidebar-awards-list__group_two
+							a.sidebar-awards-list__item(href="#")
+								img.sidebar-awards-list__img(src="content/images/awards/img-2.jpg" alt="")
+							a.sidebar-awards-list__item(href="#")
+								img.sidebar-awards-list__img(src="content/images/awards/img-3.jpg" alt="")
+						li.sidebar-awards-list__group
+							a.sidebar-awards-list__item(href="#")
+								img.sidebar-awards-list__img(src="content/images/awards/img-4.jpg" alt="")
+						li.sidebar-awards-list__group.sidebar-awards-list__group_two
+							a.sidebar-awards-list__item(href="#")
+								img.sidebar-awards-list__img(src="content/images/awards/img-5.jpg" alt="")
+							a.sidebar-awards-list__item(href="#")
+								img.sidebar-awards-list__img(src="content/images/awards/img-6.jpg" alt="")
+				a.sidebar-awards-all(href="#") Сертификаты и&nbsp;награды&nbsp;>>>
+		.page-container.page-container_break

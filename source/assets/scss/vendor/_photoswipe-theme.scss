@@ -1,0 +1,20 @@
+.pswp {
+    &__bg {
+        background: #fff;
+    }
+
+    &__top-bar {
+        top: 25px;
+    }
+
+    &__button,
+    &__button--arrow--left:before,
+    &__button--arrow--right:before {
+        background-image: url("../images/default-skin.png");
+    }
+
+    &__button:active,
+    &__button:focus {
+        outline: 0 none;
+    }
+}

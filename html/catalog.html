@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="application-name" content="">
+    <meta name="msapplication-tooltip" content="">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="app__content">
+        <!-- top navbar-->
+        <header>
+          <div class="header-top">
+            <div class="container">
+              <div class="row">
+                <div class="navbar-top">
+                  <div class="navbar-top__item"><a href="#" class="navbar-top__link">Tactical.su</a></div>
+                  <div class="navbar-top__item"><a href="#" class="navbar-top__link">О&nbsp;компании</a></div>
+                  <div class="navbar-top__item"><a href="#" class="navbar-top__link">Партнеры</a></div>
+                  <div class="navbar-top__item"><a href="#" class="navbar-top__link">Контакты</a></div>
+                </div>
+                <div class="navbar-common">
+                  <div class="navbar-common__item"><a href="#" class="navbar-common__link navbar-common__link_login"><span class="navbar-common__link-icon"></span> Вход для дилеров</a></div>
+                  <div class="navbar-common__item"><a href="mailto:example@gmail.com" class="navbar-common__link navbar-common__link_email"><span class="navbar-common__link-icon"></span> Отправить письмо</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header">
+            <div class="container">
+              <div class="row">
+                <div class="header__wrap">
+                  <div class="header__wrap-item-left">
+                    <div class="brand"><a href="#" class="brand__img"><img src="assets/images/brand.png" alt="Неоком"></a>
+                      <div class="brand__title">Профессиональные радиостанции</div>
+                    </div>
+                  </div>
+                  <div class="header__wrap-item-right">
+                    <div class="header-phone"><a href="callto:+74997030730" class="header-phone__link">+7<span> (499) 703-0730</span></a></div>
+                    <div class="header-links">
+                      <div class="header-links__title">Тактические гарнитуры</div>
+                      <div class="header-links__list">
+                        <div class="header-links__list-item"><a href="#" class="header-links__list-link">3М PELTOR</a></div>
+                        <div class="header-links__list-item"><a href="#" class="header-links__list-link">DAVID CLARK</a></div>
+                        <div class="header-links__list-item"><a href="#" class="header-links__list-link">Motorola</a></div>
+                        <div class="header-links__list-item"><a href="#" class="header-links__list-link">Vertex</a></div>
+                      </div>
+                    </div>
+                    <div class="header-search">
+                      <form action="">
+                        <div class="header-search__row">
+                          <input placeholder="Поиск" type="text" name="search" class="header-search__input">
+                          <input type="submit" value="" class="header-search__btn">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="header-support"><a href="#" class="header-support__link">Техническая поддержка</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__bottom">
+                <nav class="navbar">
+                  <div class="navbar__item is-active"><a href="#" class="navbar__link">Продукция</a>
+                    <div class="navbar-dropdown">
+                      <ul class="navbar-dropdown-list">
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Диспетчерские системы связи</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Радиостанции</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Гарнитуры</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Специальное оборудование</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Инормационнаые материалы</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Аксессуары</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="navbar__item"><a href="#" class="navbar__link">Решения</a>
+                    <div class="navbar-dropdown">
+                      <ul class="navbar-dropdown-list">
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Сухопутное применение</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Морское применение</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Авиационное применение</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">СГСО Системы громой связи и оповещения</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Trbonet enterprise</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="navbar__item"><a href="#" class="navbar__link">Услуги</a>
+                    <div class="navbar-dropdown">
+                      <ul class="navbar-dropdown-list">
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Проектирование систем радисвязи</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Поставка цифровых тактических гарнитур</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Поставка специального оборудования</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Поставка цифровых радиостанций</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Техническая поддержка</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="navbar__item"><a href="#" class="navbar__link">Технологии</a>
+                    <div class="navbar-dropdown">
+                      <ul class="navbar-dropdown-list">
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Цифровая диспетчерезация Trbonet enterprise</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Цифровая радиосвязь DMR</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Беспроводные интерком решения</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">ENC Электронное шумоподавление</a></li>
+                        <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Blootuth технологии</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                <div class="sub-navbar">
+                  <div class="sub-navbar__list">
+                    <div class="sub-navbar__list-item is-active"><a href="#" class="sub-navbar__link">Диспетчерские системы связи</a>
+                      <div class="navbar-dropdown">
+                        <ul class="navbar-dropdown-list">
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 1</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 2</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-navbar__list-item"><a href="#" class="sub-navbar__link">Радиостанции</a>
+                      <div class="navbar-dropdown">
+                        <ul class="navbar-dropdown-list">
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 1</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 2</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-navbar__list-item"><a href="#" class="sub-navbar__link">Гарнитуры</a>
+                      <div class="navbar-dropdown">
+                        <ul class="navbar-dropdown-list">
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 1</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 2</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-navbar__list-item"><a href="#" class="sub-navbar__link">Специальное оборудование</a>
+                      <div class="navbar-dropdown">
+                        <ul class="navbar-dropdown-list">
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 1</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 2</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-navbar__list-item"><a href="#" class="sub-navbar__link">Инормационнаые материалы</a>
+                      <div class="navbar-dropdown">
+                        <ul class="navbar-dropdown-list">
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 1</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 2</a></li>
+                          <li class="navbar-dropdown-list__item"><a href="#" class="navbar-dropdown-list__link">Элемент меню 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- end top navbar-->
+        <div class="page-content">
+          <div class="page-container page-container_sidebar-right">
+            <div class="page-container__sidebar">
+              <div class="page-container__sidebar-list">
+                <div class="page-container__sidebar-list-item is-active"><a href="#" class="page-container__sidebar-link">Диспетчерские  системы связи</a></div>
+                <div class="page-container__sidebar-list-item"><a href="#" class="page-container__sidebar-link">Радиостанции</a></div>
+                <div class="page-container__sidebar-list-item"><a href="#" class="page-container__sidebar-link">Гарнитуры</a></div>
+                <div class="page-container__sidebar-list-item"><a href="#" class="page-container__sidebar-link">Специальное оборудование</a></div>
+                <div class="page-container__sidebar-list-item"><a href="#" class="page-container__sidebar-link">Аксессуары</a></div>
+                <div class="page-container__sidebar-list-item"><a href="#" class="page-container__sidebar-link">Аксессуары</a></div>
+              </div>
+            </div>
+            <div class="page-container__content">
+              <div class="section">
+                <div class="section__title">
+                  <div class="section__title-decor">Каталог</div>
+                </div>
+                <div class="section__wrap">
+                  <div class="section__media"><img src="content/images/frame/frame-img-02.png"></div>
+                  <p><b>Группа компаний НЕОКОМ в очередное раз приняли участие в XXI Международной выставке «Интерполитех-2017»   </b></p>
+                  <p>С 17 по 20 октября 2017 г. на территории ВВЦ, состоялась XXI Международная выставка средств обеспечения безопасности государства «Интерполитех-2017», в работе которой приняли участие группа копаний НЕОКОМ</p>
+                  <p>С 17 по 20 октября 2017 г. на территории ВВЦ, состоялась XXI Международная выставка средств обеспечения безопасности государства «Интерполитех-2017», в работе которой приняли участие группа копаний НЕОКОМ</p>
+                  <p>С 17 по 20 октября 2017 г. на территории ВВЦ, состоялась XXI Международная выставка средств обеспечения безопасности государства «Интерполитех-2017», в работе которой приняли участие группа копаний НЕОКОМ</p>
+                  <p>С 17 по 20 октября 2017 г. на территории ВВЦ, состоялась XXI Международная выставка средств обеспечения безопасности государства «Интерполитех-2017», в работе которой приняли участие группа копаний НЕОКОМ</p>
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <div class="file-download-group">
+                        <div class="file-download-group__title">Заголовок PDF</div>
+                        <div class="file-download-group__list">
+                          <ul class="file-download-list">
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">DC PRO-X Hybrid ENC Headset Brochure</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">General Aviation Headset Brochure</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">DC ONE-X Quick Reference Guide</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Electronic Noise Cancelling Headsets - Owner's Manual</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet DC ONE-X</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet DC ONE-XH</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet DC ONE-XP</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet DC PRO</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet DC PRO-A</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet DC PRO-X</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet DC PRO-XA</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet H10-13.4</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet H10-13H</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet H10-13HXL</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">Data Sheet H10-13HXP</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="file-download-group">
+                        <div class="file-download-group__title">Заголовок DOC</div>
+                        <div class="file-download-group__list">
+                          <ul class="file-download-list">
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">DC PRO-X Hybrid ENC Headset Brochure</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">General Aviation Headset Brochure</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">DC ONE-X Quick Reference Guide</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Electronic Noise Cancelling Headsets - Owner's Manual</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Data Sheet DC ONE-X</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Data Sheet DC ONE-XH</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Data Sheet DC ONE-XP</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Data Sheet DC PRO</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Data Sheet DC PRO-A</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Data Sheet DC PRO-X</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Data Sheet DC PRO-XA</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">Data Sheet H10-13.4</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="file-download-group">
+                        <div class="file-download-group__title">Заголовок EXCEL</div>
+                        <div class="file-download-group__list">
+                          <ul class="file-download-list">
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_excel"></div><a href="#" class="file-download__name">DC PRO-X Hybrid ENC Headset Brochure</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_excel"></div><a href="#" class="file-download__name">General Aviation Headset Brochure</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_excel"></div><a href="#" class="file-download__name">DC ONE-X Quick Reference Guide</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_excel"></div><a href="#" class="file-download__name">Electronic Noise Cancelling Headsets - Owner's Manual</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_excel"></div><a href="#" class="file-download__name">Data Sheet DC ONE-X</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_excel"></div><a href="#" class="file-download__name">Data Sheet DC ONE-XH</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_excel"></div><a href="#" class="file-download__name">Data Sheet DC ONE-XP</a>
+                              </div>
+                            </li>
+                            <li class="file-download-list__item">
+                              <div class="file-download">
+                                <div class="file-download__icon file-download__icon_excel"></div><a href="#" class="file-download__name">Data Sheet DC PRO</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__wrap">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="main-product-list">
+                          <div class="main-product-list__state">
+                            <div class="main-product-list__list">
+                              <div class="main-product-list__list-item">
+                                <div class="main-product-item">
+                                  <div class="main-product-item__header">
+                                    <div class="main-product-item__media"><img src="content/images/catalog/catalog-prev.jpg" alt=""></div>
+                                  </div>
+                                  <div class="main-product-item__content">
+                                    <div class="main-product-item__title"><span class="main-product-item__title-decor">Каталог </span>David Clark
+                                    </div>
+                                  </div>
+                                  <div class="main-product-item__footer"><a href="#" class="main-product-item__link">Скачать</a></div>
+                                </div>
+                              </div>
+                              <div class="main-product-list__list-item">
+                                <div class="main-product-item">
+                                  <div class="main-product-item__header">
+                                    <div class="main-product-item__media"><img src="content/images/catalog/catalog-prev.jpg" alt=""></div>
+                                  </div>
+                                  <div class="main-product-item__content">
+                                    <div class="main-product-item__title"><span class="main-product-item__title-decor">Каталог </span>David Clark
+                                    </div>
+                                  </div>
+                                  <div class="main-product-item__footer"><a href="#" class="main-product-item__link">Скачать</a></div>
+                                </div>
+                              </div>
+                              <div class="main-product-list__list-item">
+                                <div class="main-product-item">
+                                  <div class="main-product-item__header">
+                                    <div class="main-product-item__media"><img src="content/images/catalog/catalog-prev.jpg" alt=""></div>
+                                  </div>
+                                  <div class="main-product-item__content">
+                                    <div class="main-product-item__title"><span class="main-product-item__title-decor">Каталог </span>David Clark
+                                    </div>
+                                  </div>
+                                  <div class="main-product-item__footer"><a href="#" class="main-product-item__link">Скачать</a></div>
+                                </div>
+                              </div>
+                              <div class="main-product-list__list-item">
+                                <div class="main-product-item">
+                                  <div class="main-product-item__header">
+                                    <div class="main-product-item__media"><img src="content/images/catalog/catalog-prev.jpg" alt=""></div>
+                                  </div>
+                                  <div class="main-product-item__content">
+                                    <div class="main-product-item__title"><span class="main-product-item__title-decor">Каталог </span>David Clark
+                                    </div>
+                                  </div>
+                                  <div class="main-product-item__footer"><a href="#" class="main-product-item__link">Скачать</a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__wrap">
+                    <div class="tab-container">
+                      <ul class="nav nav-tabs limit-width">
+                        <li class="active"><a href="#tab-features" data-toggle="tab"><span>Характеристики</span></a></li>
+                        <li><a href="#tab-specification" data-toggle="tab"><span>Спецификация</span></a></li>
+                        <li><a href="#tab-docmentation" data-toggle="tab"><span>Документация</span></a></li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="tab-features" class="tab-pane fade active in">
+                          <div class="section-tab">
+                            <h5 class="section-tab__title">Description</h5>
+                            <p>Short sleeve crewneck t-shirt in white in a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. Think of a news blog that’s filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.</p>
+                            <table class="table table-striped">
+                              <tbody>
+                                <tr>
+                                  <td>Производитель:</td>
+                                  <td>David Clark</td>
+                                </tr>
+                                <tr>
+                                  <td>Гарантия:</td>
+                                  <td>24 месяца</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div id="tab-specification" class="tab-pane fade">
+                          <div class="section-tab">
+                            <h5 class="section-tab__title">Скачать</h5>
+                            <ul class="list-unstyled">
+                              <li>
+                                <div class="file-download">
+                                  <div class="file-download__icon file-download__icon_pdf"></div><a href="#" class="file-download__name">DC PRO-X Hybrid ENC Headset Brochure</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div id="tab-docmentation" class="tab-pane fade">
+                          <div class="section-tab">
+                            <h5 class="section-tab__title">Скачать</h5>
+                            <ul class="list-unstyled">
+                              <li>
+                                <div class="file-download">
+                                  <div class="file-download__icon file-download__icon_doc"></div><a href="#" class="file-download__name">DC PRO-X Hybrid ENC Headset Brochure</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-container page-container_break"></div>
+        </div>
+      </div>
+      <footer class="app-footer">
+        <div class="app-footer__top">
+          <div class="app-footer__top-inner">
+            <div class="app-footer__list">
+              <div class="app-footer__list-item"><a href="#" class="app-footer__list-link">Профессиональные радиостанции</a><br><a href="#" class="app-footer__list-link">Тактические гарнитуры</a></div>
+            </div>
+            <div class="app-footer__list">
+              <div class="app-footer__list-item"><a href="#" class="app-footer__list-link">НЕОКОМ средства радиосвязи</a></div>
+            </div>
+            <div class="app-footer__text">
+              <p>Многоканальный телефон/факс:<br />Москва: +7 499 703-07-30<br />e-mail: info@neocommsk.ru </p>
+            </div>
+            <div class="app-footer__text">
+              <p>Адрес: 111123 Москва,<br />ул. 1-я Владимирская улица, 10А стр.1 офис 6А</p>
+            </div>
+          </div>
+        </div>
+        <div class="app-footer__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="app-footer__bottom-inner">&copy;&nbsp;Copyright 2017 <span>НЕОКОМ</span>&nbsp;/ tactical.su</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+          <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+          </div>
+          <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+              <div class="pswp__counter"></div>
+              <button title="Закрыть увеличенный вид, стрелки клавиатуры позволяют перемещать увеличенное изображение" class="pswp__button pswp__button--close"></button>
+              <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+              <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+              <div class="pswp__preloader">
+                <div class="pswp__preloader__icn">
+                  <div class="pswp__preloader__cut">
+                    <div class="pswp__preloader__donut"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/vendor/slick.js"></script>
+    <script src="assets/js/vendor/photoswipe.js"></script>
+    <script src="assets/js/vendor/photoswipe-ui-default.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

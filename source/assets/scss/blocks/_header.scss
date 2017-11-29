@@ -44,7 +44,8 @@
 
         &:hover,
         &:focus {
-            color: #231f20;
+            color: #d08125;
+            text-decoration: none;
         }
     }
 }
@@ -74,7 +75,8 @@
 
         &:hover,
         &:focus {
-            color: #231f20;
+            color: #d08125;
+            text-decoration: none;
         }
 
         &_login {
@@ -315,6 +317,7 @@
     border: medium none;
     padding-right: 136px;
     padding-top: 1px;
+    margin-bottom: 0;
     position: relative;
     float: left;
 
@@ -331,7 +334,7 @@
     &__item {
         float: left;
         position: relative;
-        z-index: 1;
+        z-index: 2;
     }
 
     &__link {
@@ -377,19 +380,51 @@
         background-color: rgba(#231f20, 0.5);
     }
 
-    &__item.is-active {
-        .sub-navbar {
-            display: block;
+    &__item:hover {
+        .navbar-dropdown {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.navbar-dropdown {
+    background-color: #868282;
+    min-width: 220px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 8px;
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar-dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__link {
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+        &:hover,
+        &:focus {
+            color: #d08125;
+            text-decoration: none;
         }
     }
 }
 
 .sub-navbar {
-    display: none;
-    width: 760px;
-    position: absolute;
-    left: 0;
-    top: 100%;
+    width: 100%;
+    max-width: 760px;
+    clear: left;
 
     &__list {
         display: table;
@@ -398,24 +433,41 @@
         padding: 0;
     }
 
-    &__link {
+    &__list-item {
         width: 1%;
         height: 50px;
         display: table-cell;
         vertical-align: middle;
         text-align: center;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 1;
+        box-sizing: border-box;
+
+        &:hover {
+            .navbar-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__link {
         color: #231f20;
         font-size: 14px;
         line-height: 16px;
         text-transform: uppercase;
-        padding-left: 10px;
-        padding-right: 10px;
-        box-sizing: border-box;
+    }
 
-        &:hover {
-            background-color: rgba(#231f20, 0.2);
-            text-decoration: none;
-            color: #231f20;
-        }
+    &__list-item.is-active,
+    &__list-item:hover {
+        background-color: rgba(#231f20, 0.2);
+    }
+
+    &__list-item.is-active &__link,
+    &__list-item:hover &__link {
+        text-decoration: none;
+        color: #231f20;
     }
 }

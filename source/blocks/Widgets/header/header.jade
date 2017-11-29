@@ -48,18 +48,23 @@ header
 							a.header-support__link(href="#") Техническая поддержка
 			.header__bottom
 				nav.navbar
-					.navbar__item.is-active
-						a.navbar__link(href="#") Продукция
-						.sub-navbar
-							.sub-navbar__list
-								a.sub-navbar__link(href="#") Диспетчерские системы связи
-								a.sub-navbar__link(href="#") Радиостанции
-								a.sub-navbar__link(href="#") Гарнитуры
-								a.sub-navbar__link(href="#") Специальное оборудование
-								a.sub-navbar__link(href="#") Инормационнаые материалы
-					.navbar__item
-						a.navbar__link(href="#") Решения
-					.navbar__item
-						a.navbar__link(href="#") Услуги
-					.navbar__item
-						a.navbar__link(href="#") Технологии
+					each value, ind in HEADER.navbar
+						.navbar__item(class=(ind === 0) ? "is-active" : "")
+							a.navbar__link(href=value.url)!= value.title
+							if value.dropdown
+								.navbar-dropdown
+									ul.navbar-dropdown-list
+										each list in value.dropdown
+											li.navbar-dropdown-list__item
+												a.navbar-dropdown-list__link(href=list.url)!= list.title
+				.sub-navbar
+					.sub-navbar__list
+						each value, ind in HEADER.subnav
+							.sub-navbar__list-item(class=(ind === 0) ? "is-active" : "")
+								a.sub-navbar__link(href=value.url)!= value.title
+								if value.dropdown
+									.navbar-dropdown
+										ul.navbar-dropdown-list
+											each list in value.dropdown
+												li.navbar-dropdown-list__item
+													a.navbar-dropdown-list__link(href=list.url)!= list.title

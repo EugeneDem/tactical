@@ -1,5 +1,206 @@
 {
-	"INDEX": {
+	"CATALOG": {
+		"catalog": [
+			{
+				"img": "content/images/catalog/catalog-prev.jpg",
+				"title": "David Clark"
+			},
+			{
+				"img": "content/images/catalog/catalog-prev.jpg",
+				"title": "David Clark"
+			},
+			{
+				"img": "content/images/catalog/catalog-prev.jpg",
+				"title": "David Clark"
+			},
+			{
+				"img": "content/images/catalog/catalog-prev.jpg",
+				"title": "David Clark"
+			}
+		],
+		"filesPDF": [
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "DC PRO-X Hybrid ENC Headset Brochure"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "General Aviation Headset Brochure"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "DC ONE-X Quick Reference Guide"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Electronic Noise Cancelling Headsets - Owner's Manual"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet DC ONE-X"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet DC ONE-XH"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet DC ONE-XP"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet DC PRO"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet DC PRO-A"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet DC PRO-X"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet DC PRO-XA"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet H10-13.4"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet H10-13H"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet H10-13HXL"
+			},
+			{
+				"format": "pdf",
+				"link": "#",
+				"name": "Data Sheet H10-13HXP"
+			}
+		],
+		"filesDOC": [
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "DC PRO-X Hybrid ENC Headset Brochure"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "General Aviation Headset Brochure"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "DC ONE-X Quick Reference Guide"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Electronic Noise Cancelling Headsets - Owner's Manual"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Data Sheet DC ONE-X"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Data Sheet DC ONE-XH"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Data Sheet DC ONE-XP"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Data Sheet DC PRO"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Data Sheet DC PRO-A"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Data Sheet DC PRO-X"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Data Sheet DC PRO-XA"
+			},
+			{
+				"format": "doc",
+				"link": "#",
+				"name": "Data Sheet H10-13.4"
+			}
+		],
+		"filesEXCEL": [
+			{
+				"format": "excel",
+				"link": "#",
+				"name": "DC PRO-X Hybrid ENC Headset Brochure"
+			},
+			{
+				"format": "excel",
+				"link": "#",
+				"name": "General Aviation Headset Brochure"
+			},
+			{
+				"format": "excel",
+				"link": "#",
+				"name": "DC ONE-X Quick Reference Guide"
+			},
+			{
+				"format": "excel",
+				"link": "#",
+				"name": "Electronic Noise Cancelling Headsets - Owner's Manual"
+			},
+			{
+				"format": "excel",
+				"link": "#",
+				"name": "Data Sheet DC ONE-X"
+			},
+			{
+				"format": "excel",
+				"link": "#",
+				"name": "Data Sheet DC ONE-XH"
+			},
+			{
+				"format": "excel",
+				"link": "#",
+				"name": "Data Sheet DC ONE-XP"
+			},
+			{
+				"format": "excel",
+				"link": "#",
+				"name": "Data Sheet DC PRO"
+			}
+		]
+	},
+	"MAIN": {
 		"sidebar": [
 			{
 				"title": "Диспетчерские  системы связи",
@@ -167,6 +368,208 @@
 			{
 				"url": "#",
 				"title": "Контакты"
+			}
+		],
+		"navbar": [
+			{
+				"url": "#",
+				"title": "Продукция",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Диспетчерские системы связи"
+					},
+					{
+						"url": "#",
+						"title": "Радиостанции"
+					},
+					{
+						"url": "#",
+						"title": "Гарнитуры"
+					},
+					{
+						"url": "#",
+						"title": "Специальное оборудование"
+					},
+					{
+						"url": "#",
+						"title": "Инормационнаые материалы"
+					},
+					{
+						"url": "#",
+						"title": "Аксессуары"
+					}
+				]
+			},
+			{
+				"url": "#",
+				"title": "Решения",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Сухопутное применение"
+					},
+					{
+						"url": "#",
+						"title": "Морское применение"
+					},
+					{
+						"url": "#",
+						"title": "Авиационное применение"
+					},
+					{
+						"url": "#",
+						"title": "СГСО Системы громой связи и оповещения"
+					},
+					{
+						"url": "#",
+						"title": "Trbonet enterprise"
+					}
+				]
+			},
+			{
+				"url": "#",
+				"title": "Услуги",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Проектирование систем радисвязи"
+					},
+					{
+						"url": "#",
+						"title": "Поставка цифровых тактических гарнитур"
+					},
+					{
+						"url": "#",
+						"title": "Поставка специального оборудования"
+					},
+					{
+						"url": "#",
+						"title": "Поставка цифровых радиостанций"
+					},
+					{
+						"url": "#",
+						"title": "Техническая поддержка"
+					}
+				]
+			},
+			{
+				"url": "#",
+				"title": "Технологии",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Цифровая диспетчерезация Trbonet enterprise"
+					},
+					{
+						"url": "#",
+						"title": "Цифровая радиосвязь DMR"
+					},
+					{
+						"url": "#",
+						"title": "Беспроводные интерком решения"
+					},
+					{
+						"url": "#",
+						"title": "ENC Электронное шумоподавление"
+					},
+					{
+						"url": "#",
+						"title": "Blootuth технологии"
+					}
+				]
+			}
+		],
+		"subnav": [
+			{
+				"url": "#",
+				"title": "Диспетчерские системы связи",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Элемент меню 1"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 2"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 3"
+					}
+				]
+			},
+			{
+				"url": "#",
+				"title": "Радиостанции",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Элемент меню 1"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 2"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 3"
+					}
+				]
+			},
+			{
+				"url": "#",
+				"title": "Гарнитуры",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Элемент меню 1"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 2"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 3"
+					}
+				]
+			},
+			{
+				"url": "#",
+				"title": "Специальное оборудование",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Элемент меню 1"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 2"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 3"
+					}
+				]
+			},
+			{
+				"url": "#",
+				"title": "Инормационнаые материалы",
+				"dropdown": [
+					{
+						"url": "#",
+						"title": "Элемент меню 1"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 2"
+					},
+					{
+						"url": "#",
+						"title": "Элемент меню 3"
+					}
+				]
 			}
 		]
 	}

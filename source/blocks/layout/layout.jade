@@ -15,6 +15,7 @@ html(lang='ru')
 				block content
 			block footer
 				include ../Widgets/footer/footer
-		+scripts(['vendor/jquery-3.2.1.min.js', 'vendor/bootstrap.min.js', 'vendor/jquery.nicescroll.min.js', 'vendor/slick.js'])
+			include ../Widgets/modal/photoswipe
+		+scripts(['vendor/jquery-3.2.1.min.js', 'vendor/bootstrap.min.js', 'vendor/jquery.nicescroll.min.js', 'vendor/slick.js', 'vendor/photoswipe.js', 'vendor/photoswipe-ui-default.js'])
 		block scripts
 		script(src="assets/js/main.js")

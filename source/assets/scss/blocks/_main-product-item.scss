@@ -6,7 +6,7 @@
     &__media {
         border: 1px solid #868282;
         text-align: center;
-        height: 156px;
+        min-height: 156px;
         line-height: 154px;
 
         img {
@@ -35,6 +35,10 @@
 
     &__title {
         font-weight: bold;
+    }
+
+    &__title-decor {
+        font-weight: normal;
     }
 
     &__list {

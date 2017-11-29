@@ -2,6 +2,7 @@
     &__title {
         padding-left: 102px;
         position: relative;
+        overflow: hidden;
         
         &:before {
             content: "";
@@ -43,5 +44,152 @@
 
     &__wrap {
         padding-top: 29px;
+    }
+
+    &__media {
+        max-width: 700px;
+        margin-bottom: 14px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__media_left {
+        margin-right: 14px;
+    }
+
+    &__media_right {
+        margin-left: 14px;
+    }
+}
+
+.file-download-group {
+    padding-bottom: 10px;
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+
+    &__list {
+        border-top: 1px solid #868282;
+        padding-top: 12px;
+    }
+}
+
+.file-download-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item + &__item {
+        margin-top: 12px;
+    }
+}
+
+.file-download {
+    position: relative;
+    padding-left: 28px;
+    font-size: 14px;
+
+    &__icon {
+        background: none no-repeat 0 0;
+        width: 20px;
+        height: 26px;
+        position: absolute;
+        left: 0;
+        top: -0.2em;
+    }
+
+    &__icon_pdf {
+        background-image: url("icon-pdf.svg#datauri");
+    }
+
+    &__icon_doc {
+        background-image: url("icon-doc.svg#datauri");
+    }
+
+    &__icon_excel {
+        background-image: url("icon-excel.svg#datauri");
+    }
+
+    &__name {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: inherit;
+        }
+    }
+}
+
+.tab-container {
+    background-color: #868282;
+    padding: 1px;
+    margin-bottom: 15px;
+
+    .nav-tabs {
+
+        > li {
+            margin-bottom: -3px;
+            text-align: center;
+
+            > a {
+                border: 0 none;
+                border-radius: 0;
+                color: #fff;
+                min-width: 70px;
+                padding: 15px 20px;
+
+                &:hover {
+                    background-color: rgba(#231f20, 0.4);
+                }
+            }
+
+            &.active a,
+            &.active a:hover,
+            &.active a:focus {
+                background-color: #fff;
+                border-width: 0;
+                color: #231f20;
+            }
+        }
+    }
+
+    .tab-content {
+        background-color: #FFFFFF;
+        position: relative;
+        
+        > .tab-pane {
+            display: none;
+            padding: 14px;
+        }
+
+        > .active {
+            display: block;
+        }
+    }
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    border-top: none;
+    border-bottom: 1px solid rgba(#868282, 0.4);
+    color: #231f20;
+}
+
+.table-striped {
+    > tbody > tr:nth-child(odd) {
+        background: none;
+    }
+
+    > tbody > tr:nth-child(even) {
+        background-color: rgba(#868282, 0.4);
     }
 }

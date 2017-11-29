@@ -1,0 +1,170 @@
+block page
+	-var page = "catalog";
+
+extends ../blocks/layout/layout
+
+block content
+	.page-content
+		.page-container.page-container_sidebar-right
+			.page-container__sidebar
+				.page-container__sidebar-list
+					each value, index in MAIN.sidebar
+						.page-container__sidebar-list-item(class=(index === 0) ? "is-active" : "")
+							a.page-container__sidebar-link(href=value.link)!= value.title
+			.page-container__content
+				ol.breadcrumb
+					li.breadcrumb-item
+						a(href="catalog.html") Каталог
+					li.breadcrumb-item
+						a(href="#") Ювелирные украшения
+					li.breadcrumb-item
+						a(href="#") Браслеты
+					li.breadcrumb-item
+						a(href="#") Cartier
+					li.breadcrumb-item.active
+						span Panthère de&nbsp;Cartier
+				.section
+					.section__wrap
+						.product-zoom
+							.product-zoom__state.js-product-zoom
+								figure
+									a.product-zoom__item(data-size="2000x2000")
+										img.img-fluide(src="content/images/product/big/cxl_2_1lw_3_1lw.jpg" data-thumb="content/images/product/thumb/cxl_2_1lw_3_1lw.jpg" alt="")
+								figure
+									a.product-zoom__item(data-size="2000x2000")
+										img.img-fluide(src="content/images/product/big/beslag.jpg" data-thumb="content/images/product/thumb/beslag.jpg" alt="")
+								figure
+									a.product-zoom__item(href="content/images/product/big/cxl-2_1lw.jpg" zoom="true" role="button" data-size="560x274" data-alt-zoom="")
+										img.img-fluide(src="content/images/product/big/cxl-2_1lw.jpg" data-thumb="content/images/product/thumb/cxl-2_1lw.jpg" alt="")
+								figure
+									a.product-zoom__item(href="content/images/product/big/udstra.jpg" zoom="true" role="button" data-size="560x550" data-alt-zoom="")
+										img.img-fluide(src="content/images/product/big/udstra.jpg" data-thumb="content/images/product/thumb/udstra.jpg" alt="")
+								figure
+									a.product-zoom__item(href="content/images/product/big/udstraa.jpg" zoom="true" role="button" data-size="560x554" data-alt-zoom="")
+										img.img-fluide(src="content/images/product/big/udstraa.jpg" data-thumb="content/images/product/thumb/udstraa.jpg" alt="")
+						.product-detail
+							h1.product-detail__title CXL 2-1LW/s CXL 2-1LW/l CXL 2-1LW/h
+							p
+								b Универсальная антенна единичного усиления для</b><br><b>базовых станций и судов на диапазон 160 МГц
+							p ОПИСАНИЕ
+								br
+								| В поставляемой антенне излучающий элемент электрически замкнут на массив антенного основания.
+								br
+								| Многоцелевая всенаправленная антенна усиления 0 dBd для базовых станций и судов на диапазон160 МГц - 3 модели с перекрытием в 10 МГц для самых различных применений. Широкополосный ½ λдипольный излучающий элемент помещён в конический углеволоконный корпус с&nbsp;низкой ветровой нагрузкой, обеспечивающий защиту от&nbsp;агрессивной внешней среды. Поставляется на прочном и лёгком мачтовом креплением “LW”, изготовленном из пассивированного алюминия с эпоксидным покрытием и допускающем несколько вариантов установки.
+							p Комплектный крепёж изготовлен из нержавеющей стали. Допускается установка на вертикальные или горизонтальные мачтовые трубы диаметром Ø 16 - 54 мм. Сигнальный кабель может подводиться к антенне как внутри, так и снаружи мачтовой трубы. Широкая рабочая полоса при хорошем усилении и КСВ. Все металлические части антенны заземлены (показывают электрическое замыкание на разъём), что обеспечивает значительное снижение помех от разрядов атмосферного электричества.
+							p CXL 2-1LW/… - это тонкая и лёгкая современная антенна для базовых станций и судов, отвечающая повышенным требованиям к коррозионной и виброустойчивости.
+							table.table.table-striped
+								thead
+									tr
+										th СПЕЦИФИКАЦИИ
+										th МОДЕЛЬ CXL 2-1LW/...
+								tbody
+									tr
+										td ТИП АНТЕННЫ:
+										td Широкополосный коаксиальный ½ λ диполь
+									tr
+										td РАБОЧИЕ ЧАСТОТЫ:
+										td CXL 2-1LW/s: 138 - 156 МГц
+									tr
+										td CXL 2-1LW/l:
+										td 144 - 165 МГц
+									tr
+										td CXL 2-1LW/h:
+										td 155 - 175 МГц
+									tr
+										td ИМПЕДАНС:
+										td Ном. 50 Ω
+									tr
+										td ИЗЛУЧЕНИЕ:
+										td Всенаправленное
+									tr
+										td ПОЛЯРИЗАЦИЯ:
+										td Вертикальная
+									tr
+										td УСИЛЕНИЕ:
+										td 2 dBi 0 dBd
+									tr
+										td ШИРИНА ПОЛОСЫ:
+										td 18 - 21 МГц в зависимости от модели
+									tr
+										td КСВ:
+										td ≤ 1.5
+									tr
+										td МАКС. МОЩНОСТЬ:
+										td 150 Вт
+									tr
+										td АНТИСТАТИЧЕСКАЯ ЗАЩИТА:
+										td Все металлические части заземлены (электрическое замыкание на разъём)
+									tr
+										td ТЕМПЕРАТУРА:
+										td -30°C → +70°C
+									tr
+										td ТИП РАЗЪЁМА:
+										td N(f)
+									tr
+										td ПЛОЩАДЬ ПРОФИЛЯ:
+										td 0.0172 м²
+									tr
+										td ВЕТРОВАЯ НАГРУЗКА:
+										td 22 Н при 160 км/ч
+									tr
+										td ЦВЕТ:
+										td Морской белый
+									tr
+										td МАТЕРИАЛЫ:
+										td Корпус: углеволокно с полиуретановым покрытием; Основание: пассивированный алюминий с эпоксидным покрытием; Хомуты: нержавеющая сталь
+									tr
+										td ОБЩАЯ ВЫСОТА:
+										td Около 1.26 м (зависит от частоты)
+									tr
+										td ДИАМЕТР ВВЕРХУ:
+										td 8 мм
+									tr
+										td ДИАМЕТР ВНИЗУ: 16 мм
+									tr
+										td ВЕС:
+										td Около 760 г
+									tr
+										td УСТАНОВКА:
+										td На мачтовые трубы диаметром Ø16 - 54 мм
+							.tab-container
+								ul.nav.nav-tabs.limit-width
+									li.active
+										a(href="#tab-features" data-toggle="tab")
+											span Характеристики
+									li
+										a(href="#tab-specification" data-toggle="tab")
+											span Спецификация
+									li
+										a(href="#tab-docmentation" data-toggle="tab")
+											span Документация
+								.tab-content
+									#tab-features.tab-pane.fade.active.in
+										.section-tab
+											h5.section-tab__title Description
+											p Short sleeve crewneck t-shirt in white in a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. Think of a news blog that’s filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.
+											table.table.table-striped
+												tbody
+													tr
+														td Производитель:
+														td David Clark
+													tr
+														td Гарантия:
+														td 24 месяца
+									#tab-specification.tab-pane.fade
+										.section-tab
+											h5.section-tab__title Скачать
+											ul.list-unstyled
+												li
+													.file-download
+														.file-download__icon.file-download__icon_pdf
+														a.file-download__name(href="#") DC PRO-X Hybrid ENC Headset Brochure
+									#tab-docmentation.tab-pane.fade
+										.section-tab
+											h5.section-tab__title Скачать
+											ul.list-unstyled
+												li
+													.file-download
+														.file-download__icon.file-download__icon_doc
+														a.file-download__name(href="#") DC PRO-X Hybrid ENC Headset Brochure
+		.page-container.page-container_break

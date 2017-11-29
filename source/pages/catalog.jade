@@ -1,0 +1,116 @@
+block page
+	-var page = "catalog";
+
+extends ../blocks/layout/layout
+
+block content
+	.page-content
+		.page-container.page-container_sidebar-right
+			.page-container__sidebar
+				.page-container__sidebar-list
+					each value, index in MAIN.sidebar
+						.page-container__sidebar-list-item(class=(index === 0) ? "is-active" : "")
+							a.page-container__sidebar-link(href=value.link)!= value.title
+			.page-container__content
+				.section
+					.section__title
+						.section__title-decor Каталог
+					.section__wrap
+						.section__media
+							img(src="content/images/frame/frame-img-02.png")
+						p
+							b Группа компаний НЕОКОМ в очередное раз приняли участие в XXI Международной выставке «Интерполитех-2017»   
+						p С 17 по 20 октября 2017 г. на территории ВВЦ, состоялась XXI Международная выставка средств обеспечения безопасности государства «Интерполитех-2017», в работе которой приняли участие группа копаний НЕОКОМ
+						p С 17 по 20 октября 2017 г. на территории ВВЦ, состоялась XXI Международная выставка средств обеспечения безопасности государства «Интерполитех-2017», в работе которой приняли участие группа копаний НЕОКОМ
+						p С 17 по 20 октября 2017 г. на территории ВВЦ, состоялась XXI Международная выставка средств обеспечения безопасности государства «Интерполитех-2017», в работе которой приняли участие группа копаний НЕОКОМ
+						p С 17 по 20 октября 2017 г. на территории ВВЦ, состоялась XXI Международная выставка средств обеспечения безопасности государства «Интерполитех-2017», в работе которой приняли участие группа копаний НЕОКОМ
+						.row
+							.col-xs-8
+								.file-download-group
+									.file-download-group__title Заголовок PDF
+									.file-download-group__list
+										ul.file-download-list
+											each value in CATALOG.filesPDF
+												li.file-download-list__item
+													.file-download
+														.file-download__icon(class=(value.format) ? "file-download__icon_" + value.format : "")
+														a.file-download__name(href=value.link)!= value.name
+								.file-download-group
+									.file-download-group__title Заголовок DOC
+									.file-download-group__list
+										ul.file-download-list
+											each value in CATALOG.filesDOC
+												li.file-download-list__item
+													.file-download
+														.file-download__icon(class=(value.format) ? "file-download__icon_" + value.format : "")
+														a.file-download__name(href=value.link)!= value.name
+							.col-xs-4
+								.file-download-group
+									.file-download-group__title Заголовок EXCEL
+									.file-download-group__list
+										ul.file-download-list
+											each value in CATALOG.filesEXCEL
+												li.file-download-list__item
+													.file-download
+														.file-download__icon(class=(value.format) ? "file-download__icon_" + value.format : "")
+														a.file-download__name(href=value.link)!= value.name
+						.section__wrap
+							.row
+								.col-xs-12
+									.main-product-list
+										.main-product-list__state
+											.main-product-list__list
+												each value in CATALOG.catalog
+													.main-product-list__list-item
+														.main-product-item
+															.main-product-item__header
+																.main-product-item__media
+																	img(src=value.img alt="")
+															.main-product-item__content
+																.main-product-item__title
+																	span.main-product-item__title-decor Каталог 
+																	!= value.title
+															.main-product-item__footer
+																a.main-product-item__link(href="#") Скачать
+						.section__wrap
+							.tab-container
+								ul.nav.nav-tabs.limit-width
+									li.active
+										a(href="#tab-features" data-toggle="tab")
+											span Характеристики
+									li
+										a(href="#tab-specification" data-toggle="tab")
+											span Спецификация
+									li
+										a(href="#tab-docmentation" data-toggle="tab")
+											span Документация
+								.tab-content
+									#tab-features.tab-pane.fade.active.in
+										.section-tab
+											h5.section-tab__title Description
+											p Short sleeve crewneck t-shirt in white in a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. Think of a news blog that’s filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.
+											table.table.table-striped
+												tbody
+													tr
+														td Производитель:
+														td David Clark
+													tr
+														td Гарантия:
+														td 24 месяца
+									#tab-specification.tab-pane.fade
+										.section-tab
+											h5.section-tab__title Скачать
+											ul.list-unstyled
+												li
+													.file-download
+														.file-download__icon.file-download__icon_pdf
+														a.file-download__name(href="#") DC PRO-X Hybrid ENC Headset Brochure
+									#tab-docmentation.tab-pane.fade
+										.section-tab
+											h5.section-tab__title Скачать
+											ul.list-unstyled
+												li
+													.file-download
+														.file-download__icon.file-download__icon_doc
+														a.file-download__name(href="#") DC PRO-X Hybrid ENC Headset Brochure
+		.page-container.page-container_break

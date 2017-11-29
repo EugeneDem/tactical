@@ -1,0 +1,201 @@
+{
+	"catalog": [
+		{
+			"img": "content/images/catalog/catalog-prev.jpg",
+			"title": "David Clark"
+		},
+		{
+			"img": "content/images/catalog/catalog-prev.jpg",
+			"title": "David Clark"
+		},
+		{
+			"img": "content/images/catalog/catalog-prev.jpg",
+			"title": "David Clark"
+		},
+		{
+			"img": "content/images/catalog/catalog-prev.jpg",
+			"title": "David Clark"
+		}
+	],
+	"filesPDF": [
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "DC PRO-X Hybrid ENC Headset Brochure"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "General Aviation Headset Brochure"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "DC ONE-X Quick Reference Guide"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Electronic Noise Cancelling Headsets - Owner's Manual"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet DC ONE-X"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet DC ONE-XH"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet DC ONE-XP"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet DC PRO"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet DC PRO-A"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet DC PRO-X"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet DC PRO-XA"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet H10-13.4"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet H10-13H"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet H10-13HXL"
+		},
+		{
+			"format": "pdf",
+			"link": "#",
+			"name": "Data Sheet H10-13HXP"
+		}
+	],
+	"filesDOC": [
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "DC PRO-X Hybrid ENC Headset Brochure"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "General Aviation Headset Brochure"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "DC ONE-X Quick Reference Guide"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Electronic Noise Cancelling Headsets - Owner's Manual"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Data Sheet DC ONE-X"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Data Sheet DC ONE-XH"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Data Sheet DC ONE-XP"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Data Sheet DC PRO"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Data Sheet DC PRO-A"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Data Sheet DC PRO-X"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Data Sheet DC PRO-XA"
+		},
+		{
+			"format": "doc",
+			"link": "#",
+			"name": "Data Sheet H10-13.4"
+		}
+	],
+	"filesEXCEL": [
+		{
+			"format": "excel",
+			"link": "#",
+			"name": "DC PRO-X Hybrid ENC Headset Brochure"
+		},
+		{
+			"format": "excel",
+			"link": "#",
+			"name": "General Aviation Headset Brochure"
+		},
+		{
+			"format": "excel",
+			"link": "#",
+			"name": "DC ONE-X Quick Reference Guide"
+		},
+		{
+			"format": "excel",
+			"link": "#",
+			"name": "Electronic Noise Cancelling Headsets - Owner's Manual"
+		},
+		{
+			"format": "excel",
+			"link": "#",
+			"name": "Data Sheet DC ONE-X"
+		},
+		{
+			"format": "excel",
+			"link": "#",
+			"name": "Data Sheet DC ONE-XH"
+		},
+		{
+			"format": "excel",
+			"link": "#",
+			"name": "Data Sheet DC ONE-XP"
+		},
+		{
+			"format": "excel",
+			"link": "#",
+			"name": "Data Sheet DC PRO"
+		}
+	]
+}
