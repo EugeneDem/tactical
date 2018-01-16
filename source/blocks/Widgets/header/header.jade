@@ -44,8 +44,8 @@ header
 								.header-search__row
 									input.header-search__input(placeholder="Поиск" type="text" name="search")
 									input.header-search__btn(type="submit" value="")
-						.header-support
-							a.header-support__link(href="#") Техническая поддержка
+						// .header-support
+								a.header-support__link(href="#") Техническая поддержка
 			.header__bottom
 				nav.navbar
 					each value, ind in HEADER.navbar
@@ -57,6 +57,7 @@ header
 										each list in value.dropdown
 											li.navbar-dropdown-list__item
 												a.navbar-dropdown-list__link(href=list.url)!= list.title
+											
 				.sub-navbar
 					.sub-navbar__list
 						each value, ind in HEADER.subnav
@@ -65,6 +66,14 @@ header
 								if value.dropdown
 									.navbar-dropdown
 										ul.navbar-dropdown-list
-											each list in value.dropdown
-												li.navbar-dropdown-list__item
-													a.navbar-dropdown-list__link(href=list.url)!= list.title
+											each item, index in value.dropdown
+												if item.list
+													li.navbar-dropdown-list__item
+														a.navbar-dropdown-list__link(href=item.url)!= item.title
+														ul.navbar-dropdown-list
+															each sublist in item.list
+																li.navbar-dropdown-list__item
+																	a.navbar-dropdown-list__link(href=sublist.url)!= sublist.title
+												else
+													li.navbar-dropdown-list__item
+														a.navbar-dropdown-list__link(href=item.url, data-index=index)!= item.title
